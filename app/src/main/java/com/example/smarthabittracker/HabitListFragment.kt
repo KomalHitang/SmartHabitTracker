@@ -11,8 +11,8 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.examreview.receivers.BatteryReceiver
-import com.example.examreview.services.HabitTimerService
+//import com.example.examreview.receivers.BatteryReceiver
+//import com.example.examreview.services.HabitTimerService
 
 class HabitListFragment : Fragment() {
 
