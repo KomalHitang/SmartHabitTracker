@@ -47,8 +47,7 @@ class MainActivity<HabitWorker> : AppCompatActivity() {
     }
 
     private fun scheduleHabitReminderWorker() {
-        val workRequest = PeriodicWorkRequestBuilder<HabitWorker>(
-            1, TimeUnit.DAYS)
+        val workRequest = PeriodicWorkRequestBuilder<HabitWorker>(1,TimeUnit.DAYS)
             .setConstraints(
                 Constraints.Builder()
                     .setRequiredNetworkType(NetworkType.NOT_REQUIRED)

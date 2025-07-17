@@ -1,6 +1,6 @@
 package com.example.examreview.services
 
-import com.example.examreview.Quote
+
 import com.example.smarthabittracker.Quote
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
