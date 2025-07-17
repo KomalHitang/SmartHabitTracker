@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/habitListFragment">
+
+    <fragment
+        android:id="@+id/habitListFragment"
+        android:name="com.example.examreview.HabitListFragment"
+        android:label="Habit List"
+        tools:layout="@layout/fragment_habit_list" >
+
+        <!-- ADD THIS inside HabitListFragment -->
+
+        <action
+            android:id="@+id/action_habitListFragment_to_addHabitFragment"
+            app:destination="@id/addHabitFragment" />
+        <action
+            android:id="@+id/action_habitListFragment_to_quoteFragment"
+            app:destination="@id/quoteFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addHabitFragment"
+        android:name="com.example.examreview.AddHabitFragment"
+        android:label="Add Habit"
+        tools:layout="@layout/fragment_add_habit" />
+
+    <fragment
+        android:id="@+id/quoteFragment"
+        android:name="com.example.examreview.QuoteFragment"
+        android:label="Quote"
+        tools:layout="@layout/fragment_quote" />
+
+</navigation>
